@@ -78,16 +78,16 @@ function MainSec() {
     }
     if (!inView) {
       animation.start({
-        opacity: 0,
-        // x: "-100vw",
+        opacity: 1,
+        x: "0vw",
       });
       animation2.start({
-        opacity: 0,
-        // x: "-10vw",
+        opacity: 1,
+        x: "0vw",
       });
       animation3.start({
-        opacity: 0,
-        // y: "-5vw",
+        opacity: 1,
+        y: "0vw",
         // scale: 0.5,
       });
     }
@@ -96,9 +96,9 @@ function MainSec() {
   return (
     <motion.div
       className="grid mt-[1%] mb-[10%] w-screen overflow-hidden snap-mandatory bg-[#001233] z-50 h-screen"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // exit={{ opacity: 0 }}
       id="home"
       ref={ref}
     >
