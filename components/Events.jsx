@@ -53,47 +53,47 @@ function Events() {
       animation.start({
         x: 0,
         opacity: 1,
-        transition: {
-          type: "spring",
-          delay: 0.2,
-          duration: 1,
-          bounce: 0.1,
-        },
+        // transition: {
+        //   type: "spring",
+        //   delay: 0.2,
+        //   duration: 1,
+        //   bounce: 0.1,
+        // },
       });
 
       animation2.start({
         x: 0,
         opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 1,
-          delay: 0.2,
-          bounce: 0.1,
-        },
+        // transition: {
+        //   type: "spring",
+        //   duration: 1,
+        //   delay: 0.2,
+        //   bounce: 0.1,
+        // },
       });
       animation3.start({
         x: 0,
         opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 1,
-          delay: 0.2,
-          bounce: 0.1,
-        },
+        // transition: {
+        //   type: "spring",
+        //   duration: 1,
+        //   delay: 0.2,
+        //   bounce: 0.1,
+        // },
       });
     }
     if (!inView) {
       animation.start({
-        opacity: 0,
-        x: "-10vw",
+        // opacity: 0,
+        // x: "-10vw",
       });
       animation2.start({
-        opacity: 0,
-        x: "0vw",
+        // opacity: 0,
+        // x: "0vw",
       });
       animation3.start({
-        opacity: 0,
-        x: "1vw",
+        // opacity: 0,
+        // x: "1vw",
         // scale: 0.5,
       });
     }
@@ -104,7 +104,7 @@ function Events() {
       <motion.div
         className="flux bg-[#111b53] w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0 mx-20 "
         whileHover={{ y: "-10px" }}
-        animate={animation3}
+        // animate={animation3}
         // initial={{ opacity: 0 }}
         // animate={{ opacity: 1 }}
         // transition={{ duration: 0.4 }}
@@ -112,7 +112,7 @@ function Events() {
       <motion.div className="bg-[#faf3ea] w-full h-auto mr-0 mt-10 pt-10 sm:h-auto xsm:h-auto p-10">
         <motion.h1
           className="text-white text-9xl text-center mb-10 subheadings"
-          animate={animation}
+          // animate={animation}
           style={{
             fontFamily: "valorax Regular",
             fontWeight: "normal",
@@ -128,7 +128,7 @@ function Events() {
           <motion.div
             className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0"
             whileHover={{ y: "-10px" }}
-            animate={animation}
+            // animate={animation}
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}
             // transition={{ duration: 0.4 }}

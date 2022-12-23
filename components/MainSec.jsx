@@ -49,46 +49,46 @@ function MainSec() {
       animation.start({
         x: 0,
         opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.1,
-        },
+        // transition: {
+        //   type: "spring",
+        //   duration: 1,
+        //   bounce: 0.1,
+        // },
       });
 
       animation2.start({
         x: 0,
         opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.1,
-        },
+        // transition: {
+        //   type: "spring",
+        //   duration: 1,
+        //   bounce: 0.1,
+        // },
       });
       animation3.start({
         y: 0,
         opacity: 1,
         scale: 1,
-        transition: {
-          type: "spring",
-          duration: 1.5,
-          bounce: 0.1,
-        },
+        // transition: {
+        //   type: "spring",
+        //   duration: 1.5,
+        //   bounce: 0.1,
+        // },
       });
     }
     if (!inView) {
       animation.start({
         opacity: 0,
-        x: "-100vw",
+        // x: "-100vw",
       });
       animation2.start({
         opacity: 0,
-        x: "-10vw",
+        // x: "-10vw",
       });
       animation3.start({
         opacity: 0,
-        y: "-5vw",
-        scale: 0.5,
+        // y: "-5vw",
+        // scale: 0.5,
       });
     }
   });
