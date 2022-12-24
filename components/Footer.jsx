@@ -29,8 +29,17 @@ function Footer() {
       }}
     >
       <div className="flux w-full bg-[#111b53] z-50 pb-10">
-        <div className="text-[#111111] text-4xl rounded-full bg-slate-600 w-[150px] h-[150px] leading-[150px] text-center mx-auto mt-[50px]">
-          <h1>L</h1>
+        <div className="text-[#111111] text-4xl w-[150px] leading-[150px] text-center mx-auto mt-[50px]">
+          <h1
+            style={{
+              fontFamily: "valorax Regular",
+              fontWeight: "normal",
+              fontSize: "30px",
+              color: "white"
+            }}
+          >
+            INGENIUM
+          </h1>
         </div>
 
         <div className="h-[30px] mt-[30px] ">
