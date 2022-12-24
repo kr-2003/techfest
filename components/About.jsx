@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import ThreeCanvas from "./ThreeCanvas";
 
+
 const style = {
   position: "absolute",
   top: "50%",
