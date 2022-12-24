@@ -9,8 +9,6 @@ import Particle from "../components/Particle";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Progress from "../components/Progress";
-import DeviceIdentifier from 'react-device-identifier';
-import { BrowserView, CustomView } from 'react-device-detect';
 import window from 'global'
 
 function home() {
