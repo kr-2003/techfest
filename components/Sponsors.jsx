@@ -65,7 +65,7 @@ function Sponsors() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex flex-col h-screen w-screen space-y-8 w-full mt-40 md:px-4">
+      <div className="flex flex-col h-screen w-screen w-full mt-0 md:px-4 mt-0">
         <div className="flex w-full z-50">
           <h1
             style={{

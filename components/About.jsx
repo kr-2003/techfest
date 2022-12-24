@@ -58,9 +58,8 @@ function About() {
         opacity: 1,
         transition: {
           type: "spring",
-          duration: 1,
+          duration: 0.3,
           delay: 0.3,
-          bounce: 0.1,
         },
       });
 
@@ -69,16 +68,16 @@ function About() {
         opacity: 1,
         transition: {
           type: "spring",
-          duration: 1,
+          duration: 0.3,
           bounce: 0.1,
-          delay: 0.6,
         },
       });
       animation3.start({
         x: 0,
+        opacity: 1,
         transition: {
           type: "spring",
-          duration: 1,
+          duration: 0.3,
           bounce: 0.1,
         },
       });
@@ -86,15 +85,12 @@ function About() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        y: "10vh",
       });
       animation2.start({
         opacity: 0,
-        y: "10vh",
       });
       animation3.start({
         opacity: 0,
-        x: "0",
         // scale: 0.5,
       });
     }
@@ -103,13 +99,13 @@ function About() {
   return (
     <div
       id="about"
-      className="h-auto md:w-screen sm:w-full xsm:w-full xxsm:w-full bg-[#faf3ea] x-50"
+      className="h-auto md:w-screen sm:w-full xsm:w-full xxsm:w-full x-50"
     >
       <motion.div className="z-50 h-auto md:m-6 pr-10 pt-[100px]">
         <div className="grid md:grid-cols-1 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto mb-[50px]">
           <motion.h1
-            className="text-white text-9xl mb-10 ml-10 text-center subheadings uppercase"
-            animate={animation}
+            className="z-50 text-white text-9xl mb-10 ml-10 text-center subheadings uppercase"
+            // animate={animation}
             style={{
               fontFamily: "valorax Regular",
               fontWeight: "normal",
@@ -120,32 +116,30 @@ function About() {
         </div>
         <div
           className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto"
-          variants={container}
+          // variants={container}
           initial="hidden"
           animate="show"
           exit="exit"
         >
-          <motion.div
-            className="flex items-center justify-center w-[100%] h-[100%]"
-            animate={animation}
+          <div
+            className="z-50 relative flex items-center justify-center"
+            // animate={animatixon}
           >
             <ThreeCanvas className="opacity-0.4"></ThreeCanvas>
-            <Image
-              className="z-50 h-[70%] w-[100%] absolute mt-20"
+            <img
+              className="z-50 w-[100%] h-[100%]"
               src="/wordcropped.png"
               alt="An SVG of an eye"
-              width={500}
-              height={400}
             />
-          </motion.div>
+          </div>
           <motion.h1
-            className="text-[#ffffff] md:text-9xl mb-10 ml-10"
-            animate={animation2}
+            className="z-50 text-[#ffffff] md:text-9xl mb-10 ml-10"
+            // animate={animation2}
             style={{
               // fontFamily: "valorax Regular",
               // fontWeight: "normal",
               fontFamily: ["JetBrains Mono", "monospace"],
-              fontSize: "30px",
+              fontSize: "20px",
               lineHeight: "1.5",
             }}
           >
@@ -164,7 +158,7 @@ function About() {
           </motion.h1>
         </div>
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div>
+        {/* <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div> */}
       </motion.div>
     </div>
   );

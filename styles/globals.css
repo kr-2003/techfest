@@ -41,7 +41,7 @@ body {
 }
 
 .subheadings {
-  font-size: 140px;
+  font-size: 100px;
   margin-bottom: 100px;
   margin-top: 50px;
 }
@@ -567,7 +567,7 @@ body {
   border: 1px solid rgba(225, 227, 232, 0.18);
   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
   box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
-  background-image: url("/images/Group\ 1.png");
+  background-image: url("/images/Group.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,7 +614,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/images/Group\ 1.png");
+  background-image: url("/images/Group.png");
 
   -webkit-box-pack: center;
   -ms-flex-pack: center;

@@ -12,7 +12,7 @@ function Button(props) {
         background:
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(170,170,255,1) 0%, rgba(84,226,255,1) 100%)",
         fontFamily: ["JetBrains Mono", "monospace"],
-        fontSize: "20px",
+        fontSize: "15px",
         lineHeight: "1.5",
       }}
       whileHover={{
