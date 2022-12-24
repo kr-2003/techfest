@@ -102,14 +102,14 @@ function Events() {
   return (
     <motion.Reactdiv id="events" className="h-auto w-90 bg-[#faf3ea]">
       <motion.div
-        className="flux bg-[#111b53] w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0 mx-20 "
+        className="flux w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0 mx-20 "
         whileHover={{ y: "-10px" }}
         animate={animation3}
         // initial={{ opacity: 0 }}
         // animate={{ opacity: 1 }}
         // transition={{ duration: 0.4 }}
       ></motion.div>
-      <motion.div className="bg-[#faf3ea] w-full h-auto mr-0 mt-10 pt-10 sm:h-auto xsm:h-auto p-10">
+      <motion.div className="w-full h-auto mr-0 mt-10 pt-10 sm:h-auto xsm:h-auto p-10">
         <motion.h1
           className="text-white text-9xl text-center mb-10 subheadings"
           animate={animation}

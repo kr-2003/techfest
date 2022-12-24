@@ -19,7 +19,7 @@ function home() {
         transition={{ duration: 0.8 }}
         exit={{ opacity: 2 }}
       >
-        <Particle></Particle>
+        {/* <Particle></Particle> */}
         <Navbar></Navbar>
         <HomePage></HomePage>
         <About></About>

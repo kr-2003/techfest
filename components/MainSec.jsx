@@ -95,31 +95,11 @@ function MainSec() {
 
   return (
     <motion.div
-      className="grid mt-[1%] mb-[10%] w-screen overflow-hidden snap-mandatory bg-[#001233] z-50 h-screen"
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // exit={{ opacity: 0 }}
+      className="grid mt-[1%] mb-[10%] w-screen overflow-hidden snap-mandatory z-50 h-screen"
       id="home"
       ref={ref}
     >
       <div className="text-[#FF595A] flex items-center justify-center ml-8 z-0">
-        {/* <ThreeCanvas></ThreeCanvas> */}
-        {/* <div
-          class="tenor-gif-embed"
-          data-postid="14681886"
-          data-share-method="host"
-          data-aspect-ratio="1"
-          data-width="100%"
-        >
-          <a href="https://tenor.com/view/fire-fireball-8bit-gif-14681886">
-            Fire Fireball Sticker
-          </a>
-          from{" "}
-          <a href="https://tenor.com/search/fire-stickers">Fire Stickers</a>
-        </div>{" "}
-        <p>
-          <a href="https://giphy.com/gifs/gYWeVOiMmbg3kzCTq5">via GIPHY</a>
-        </p> */}
         <div className="absolute z-50">
           <motion.div animate={animation}>
             <h1
@@ -127,7 +107,6 @@ function MainSec() {
               style={{
                 fontFamily: "valorax Regular",
                 fontWeight: "normal",
-                // fontSize: "200px"
               }}
             >
               INGENIUM
@@ -141,14 +120,14 @@ function MainSec() {
             >
               2022-23
             </h1>
-            <motion.div className="h-[50%] p-10 mt-10">
+            {/* <motion.div className="h-[50%] p-10 mt-10">
               <motion.h1
                 className="tagline text-white flex items-center justify-center text-center flux3 h-full"
                 animate={animation}
               >
                 TECH IT or LEAVE IT!
               </motion.h1>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* <motion.h1 className="text-5xl mb-10 z-50">2022-23</motion.h1>

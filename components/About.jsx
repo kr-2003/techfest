@@ -100,7 +100,7 @@ function About() {
   return (
     <div
       id="about"
-      className="h-auto md:w-screen sm:w-full xsm:w-full xxsm:w-full bg-[#faf3ea] x-50"
+      className="h-auto md:w-screen sm:w-full xsm:w-full xxsm:w-full x-50"
     >
       <motion.div className="z-50 h-auto md:m-6 pr-10 pt-[100px]">
         <div className="grid md:grid-cols-1 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto mb-[50px]">
@@ -142,7 +142,7 @@ function About() {
               // fontFamily: "valorax Regular",
               // fontWeight: "normal",
               fontFamily: ["JetBrains Mono", "monospace"],
-              fontSize: "30px",
+              fontSize: "20px",
               lineHeight: "1.5",
             }}
           >

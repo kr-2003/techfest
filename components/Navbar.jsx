@@ -48,11 +48,11 @@ function Navbar() {
       <Progress></Progress>
       <div className="fixed w-full top-0 colo opacity-100 z-50">
         <div className="flex items-center justify-between colo py-4 md:px-10 px-7">
-          <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800">
-            <span className="text-3xl text-cyan-900 mr-1">
+          <div className="font-bold text-xl cursor-pointer flex items-center text-gray-800">
+            <span className="text-xl text-cyan-900 mr-1">
               <div
                 onClick={() => setOpen(!open)}
-                className="text-3xl absolute right-8 top-10 cursor-pointer md:hidden z-50"
+                className="text-xl absolute right-8 top-10 cursor-pointer md:hidden z-50"
               >
                 <ion-icon
                   name={open ? "close" : "menu-outline"}
@@ -72,7 +72,7 @@ function Navbar() {
                 {link.name === "Tech Exihibits" && (
                   <LightTooltip title="Coming Soon!">
                     <li
-                      className="md:ml-8 text-xl md:my-0 my-7 hover:cursor-pointer"
+                      className="md:ml-8 text-md md:my-0 my-7 hover:cursor-pointer"
                       key={link.name}
                       onMouseEnter={() => hoverHandler(link.name)}
                       onMouseLeave={() => hover2Handler()}
@@ -84,7 +84,7 @@ function Navbar() {
                         duration={1000}
                         style={{
                           fontFamily: ["JetBrains Mono", "monospace"],
-                          fontSize: "20px",
+                          fontSize: "15px",
                           lineHeight: "1.5",
                         }}
                       >
@@ -109,7 +109,7 @@ function Navbar() {
                             className="text-white w-100 p-4"
                             style={{
                               fontFamily: ["JetBrains Mono", "monospace"],
-                              fontSize: "20px",
+                              fontSize: "10px",
                               lineHeight: "1.5",
                             }}
                             initial={{ opacity: 0 }}
@@ -150,7 +150,7 @@ function Navbar() {
                       duration={1000}
                       style={{
                         fontFamily: ["JetBrains Mono", "monospace"],
-                        fontSize: "20px",
+                        fontSize: "15px",
                         lineHeight: "1.5",
                       }}
                     >
@@ -175,7 +175,7 @@ function Navbar() {
                           className="text-white w-100 p-4"
                           style={{
                             fontFamily: ["JetBrains Mono", "monospace"],
-                            fontSize: "20px",
+                            fontSize: "15px",
                             lineHeight: "1.5",
                           }}
                           initial={{ opacity: 0 }}
