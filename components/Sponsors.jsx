@@ -60,12 +60,12 @@ function Sponsors() {
   return (
     <motion.Reactdiv
       id="sponsors"
-      className="z-0 flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen"
+      className="z-0 flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen mt-0"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex flex-col h-screen w-screen space-y-16 w-full mt-40 md:px-4">
+      <div className="flex flex-col h-screen w-screen w-full mt-0 md:px-4 mt-0">
         <div className="flex w-full z-50">
           <h1
             style={{

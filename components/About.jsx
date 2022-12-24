@@ -161,7 +161,7 @@ function About() {
           </motion.h1>
         </div>
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div>
+        {/* <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div> */}
       </motion.div>
     </div>
   );
