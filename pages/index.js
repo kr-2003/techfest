@@ -9,6 +9,7 @@ import Particle from "../components/Particle";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Progress from "../components/Progress";
+import DeviceIdentifier from 'react-device-identifier';
 
 function home() {
   return (
@@ -19,7 +20,9 @@ function home() {
         transition={{ duration: 0.8 }}
         exit={{ opacity: 2 }}
       >
-        {/* <Particle></Particle> */}
+        <DeviceIdentifier isDesktop={true}>
+          <Particle></Particle>
+        </DeviceIdentifier>
         <Navbar></Navbar>
         <HomePage></HomePage>
         <About></About>
