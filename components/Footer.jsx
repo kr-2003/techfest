@@ -145,13 +145,13 @@ function Footer() {
       </div>
       <div className="bg-[#111b53] w-full z-50 h-auto pb-10 font-bold">
         <h1 className="text-3xl ml-[45px] mt-[40px]">ADDRESS</h1>
-        <p className="ml-[45px] mt-[10px] text-lg">
+        <div className="ml-[45px] mt-[10px] text-lg">
           Indian Institute of Technology Indore
           <br></br>
           Khandwa Road, Simrol, Indore
           <br></br>
           453552, INDIA
-        </p>
+        </div>
         {/* <hr className="ml-[45px]  w-[350px]" /> */}
       </div>
     </motion.div>
