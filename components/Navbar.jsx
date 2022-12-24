@@ -159,7 +159,7 @@ function Navbar() {
                     </Link>
                     {link.name === "Events" && (
                       <motion.div
-                        className={`w-[400px] bg-blue-800 z-[999] absolute ${
+                        className={`border-2 rounded-lg border-white w-[400px] bg-black-800 z-[999] absolute ${
                           dropdown !== "Events" && "hidden"
                         }`}
                         initial={{ opacity: 0 }}

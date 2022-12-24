@@ -237,7 +237,7 @@ function Events() {
             </div>
           </motion.div>
           <motion.div
-            className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0"
+            className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0 mb-0"
             whileHover={{ y: "-10px" }}
             animate={animation3}
             // initial={{ opacity: 0 }}

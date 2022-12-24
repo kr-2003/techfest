@@ -60,7 +60,7 @@ function Sponsors() {
   return (
     <motion.Reactdiv
       id="sponsors"
-      className="z-0 flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen mt-0"
+      className="z-0 flex items-center justify-center md:h-[900px] sm:h-[1500px] h-[1500px] w-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

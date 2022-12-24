@@ -122,19 +122,17 @@ function About() {
           animate="show"
           exit="exit"
         >
-          <motion.div
-            className="flex z-50 items-center justify-center w-[100%] h-[100%]"
+          <div
+            className="z-50 relative flex items-center justify-center"
             // animate={animatixon}
           >
             <ThreeCanvas className="opacity-0.4"></ThreeCanvas>
-            {/* <Image
-              className="z-50 h-[70%] absolute mt-20"
+            <img
+              className="z-50 w-[100%] h-[100%]"
               src="/wordcropped.png"
               alt="An SVG of an eye"
-              width={500}
-              height={400}
-            /> */}
-          </motion.div>
+            />
+          </div>
           <motion.h1
             className="z-50 text-[#ffffff] md:text-9xl mb-10 ml-10"
             // animate={animation2}

@@ -35,30 +35,28 @@ function Footer() {
 
         <div className="h-[30px] mt-[30px] ">
           <div className="h-[30px] text-xl mx-auto text-center">
-          {/* <FontAwesomeIcon
+            {/* <FontAwesomeIcon
             icon={faPhone}
             className="text-3xl mr-[50px]"
           ></FontAwesomeIcon> */}
-          9898989898
+            9898989898
           </div>
-         
         </div>
         <div className="h-[30px] mt-[20px]">
-        <div className="h-[30px] text-xl text-center">
-          {/* <FontAwesomeIcon
+          <div className="h-[30px] text-xl text-center">
+            {/* <FontAwesomeIcon
             icon={faAddressBook}
             className="text-3xl mr-[50px]"
           ></FontAwesomeIcon> */}
-          IIT INDORE
+            IIT INDORE
           </div>
-         
         </div>
       </div>
       <div className="bg-[#111b53] w-full z-50 pb-10">
-        <h1 className="text-4xl ml-[45px] mt-[40px] font-bold">MORE</h1>
+        <h1 className="text-3xl ml-[45px] mt-[40px] font-bold">MORE</h1>
         <a
           href="https://www.google.com"
-          className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold w-full"
+          className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold w-full"
         >
           {/* <FontAwesomeIcon
             icon={faTwitter}
@@ -67,34 +65,34 @@ function Footer() {
           Home
         </a>
 
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
           {/* <FontAwesomeIcon icon={faFacebook} className="text-3xl">
             {" "}
           </FontAwesomeIcon> */}
           About Us
         </a>
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
           {/* <FontAwesomeIcon
             icon={faInstagram}
             className="text-3xl"
           ></FontAwesomeIcon> */}
           Events
         </a>
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
           {/* <FontAwesomeIcon
             icon={faLinkedin}
             className="text-3xl"
           ></FontAwesomeIcon> */}
           Sponsors
         </a>
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
           {/* <FontAwesomeIcon
             icon={faDiscord}
             className="text-3xl"
           ></FontAwesomeIcon> */}
           Fluxus Tech Exihibits
         </a>
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
           {/* <FontAwesomeIcon
             icon={faDiscord}
             className="text-3xl"
@@ -103,10 +101,10 @@ function Footer() {
         </a>
       </div>
       <div className="bg-[#111b53] w-full z-50 pb-10">
-        <h1 className="text-4xl ml-[45px] mt-[40px] font-bold">FOLLOW</h1>
+        <h1 className="text-3xl ml-[45px] mt-[40px] font-bold">FOLLOW</h1>
         <a
           href="https://www.google.com"
-          className="text-xl  hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+          className="text-lg  hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
         >
           {/* <FontAwesomeIcon
             icon={faTwitter}
@@ -115,30 +113,30 @@ function Footer() {
           Twitter
         </a>
 
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        {/* <FontAwesomeIcon
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+          {/* <FontAwesomeIcon
             icon={faInstagram}
             className="text-2xl mr-[10px] align-middle rounded-full p-[5px]  hover:bg-gradient-to-tr hover:from-[#fdf497] hover:via-[#fd5949] hover:via-[#d6249f] hover:to-[#285AEB] hover:text-white"
           >
           </FontAwesomeIcon> */}
           Instagram
         </a>
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        {/* <FontAwesomeIcon
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+          {/* <FontAwesomeIcon
             icon={faLinkedin}
             className="text-2xl mr-[10px] align-middle rounded-full p-[6px]  hover:bg-[#007bb5] hover:text-white"
           ></FontAwesomeIcon> */}
           LinkedIn
         </a>
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        {/* <FontAwesomeIcon
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+          {/* <FontAwesomeIcon
             icon={faDiscord}
             className="text-2xl mr-[10px] align-middle rounded-full p-[5px] hover:bg-[#7289d9] hover:text-white "
           ></FontAwesomeIcon> */}
           Discord
         </a>
-        <a className="text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-        {/* <FontAwesomeIcon
+        <a className="text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+          {/* <FontAwesomeIcon
             icon={faFacebook}
             className="text-2xl mr-[10px] align-middle rounded-full p-[4px] hover:bg-white hover:text-[#3B5998] "
           ></FontAwesomeIcon> */}
@@ -146,18 +144,14 @@ function Footer() {
         </a>
       </div>
       <div className="bg-[#111b53] w-full z-50 h-auto pb-10 font-bold">
-        <h1 className="text-4xl ml-[45px] mt-[40px]">LEGAL</h1>
-        <a className="ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] font-bold">
-          Privacy
-        </a>
-        {/* <hr className="ml-[45px]  w-[350px]" /> */}
-        <a className="ml-[45px] hover:rounded-sm p-[4px] block text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] font-bold">
-          Terms
-        </a>{" "}
-        {/* <hr className="ml-[45px]  w-[350px]" /> */}
-        <a className="ml-[45px] hover:rounded-sm p-[4px] block text-xl hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] font-bold">
-          Brand guidelines
-        </a>{" "}
+        <h1 className="text-3xl ml-[45px] mt-[40px]">ADDRESS</h1>
+        <p className="ml-[45px] mt-[10px] text-lg">
+          Indian Institute of Technology Indore
+          <br></br>
+          Khandwa Road, Simrol, Indore
+          <br></br>
+          453552, INDIA
+        </p>
         {/* <hr className="ml-[45px]  w-[350px]" /> */}
       </div>
     </motion.div>
