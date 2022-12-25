@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Carousel from "./Carousel";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -103,7 +102,7 @@ function MainSec() {
         <div className="absolute z-50">
           <motion.div animate={animation}>
             <h1
-              className="main-logo textfont-bold z-50 text-white"
+              className="main-logo textfont-bold z-50 text-white md:pt-60"
               style={{
                 fontFamily: "valorax Regular",
                 fontWeight: "normal",
@@ -120,14 +119,14 @@ function MainSec() {
             >
               2022-23
             </h1>
-            {/* <motion.div className="h-[50%] p-10 mt-10">
+            <motion.div className="h-[50%] p-10 mt-10">
               <motion.h1
                 className="tagline text-white flex items-center justify-center text-center flux3 h-full"
                 animate={animation}
               >
                 TECH IT or LEAVE IT!
               </motion.h1>
-            </motion.div> */}
+            </motion.div>
           </motion.div>
 
           {/* <motion.h1 className="text-5xl mb-10 z-50">2022-23</motion.h1>

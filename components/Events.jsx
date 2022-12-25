@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Carousel from "./Carousel";
 import Box from "@mui/material/Box";
 import Button from "./Button";
 import Typography from "@mui/material/Typography";
@@ -105,6 +104,7 @@ function Events() {
         className="flux w-100 h-[10px] shadow-2xl text-white rounded-lg border-[3px] p-0 mx-20 "
         whileHover={{ y: "-10px" }}
         animate={animation3}
+        ref={ref}
         // initial={{ opacity: 0 }}
         // animate={{ opacity: 1 }}
         // transition={{ duration: 0.4 }}
@@ -236,6 +236,8 @@ function Events() {
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>
           </motion.div>
+        </div>
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 grid-flow-row gap-8 md:px-[230px] mt-4">
           <motion.div
             className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0 mb-0"
             whileHover={{ y: "-10px" }}
@@ -252,7 +254,44 @@ function Events() {
                 fontSize: "30px",
               }}
             >
-              workshops
+              start up expo
+            </h1>
+            <div
+              style={{
+                fontFamily: ["JetBrains Mono", "monospace"],
+                fontSize: "20px",
+                lineHeight: "1.5",
+              }}
+              className="p-5 mt-6"
+            >
+              POLISH YOUR TECH SKILLS, LEARN NEW THINGS, FIND NEW PERSONS. TIME
+              TO INCRESE YOUR CURIOSITY. REGGISTER FOR VARIOUS WORKSHOPS IN
+              INGENIUM.
+            </div>
+            <div
+              className="mt-8 text-sm w-100 text-center mb-8"
+              onClick={competitionsHandler}
+            >
+              <Button value="KNOW MORE!" ml="0"></Button>
+            </div>
+          </motion.div>
+          <motion.div
+            className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0 mb-0"
+            whileHover={{ y: "-10px" }}
+            animate={animation3}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ duration: 0.4 }}
+          >
+            <h1
+              className="p-0 w-100 text-center m-0 text-sm mt-10"
+              style={{
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "30px",
+              }}
+            >
+              tech exhibits
             </h1>
             <div
               style={{
@@ -289,7 +328,7 @@ function Events() {
           </motion.h1>
         </motion.div> */}
       </motion.div>
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -302,7 +341,7 @@ function Events() {
           // animate={{ opacity: 1 }}
           // transition={{ duration: 0.4 }}
         ></motion.div>
-      </motion.div> */}
+      </motion.div>
     </motion.Reactdiv>
   );
 }
