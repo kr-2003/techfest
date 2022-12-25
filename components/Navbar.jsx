@@ -65,6 +65,8 @@ function Navbar() {
           <motion.ul
             className={`md:flex md:bg-transparent lg:bg-transparent sm:bg-[#111b53]  xsm:bg-[#111b53]  xxsm:bg-[#111b53] md:items-center md:pb-0 pb-12 absolute md:static z-[999] colo md:z-50 z-50 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${
               open ? "top-[100px]" : "top-[-500px]"
+            }${
+              open ? "xxsm:top-[200px]" : "ssxm:top-[-500px]"
             } z-5`}
           >
             {links.map((link) => (
