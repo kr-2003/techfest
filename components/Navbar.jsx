@@ -15,14 +15,14 @@ const LightTooltip = styled(({ className, ...props }) => (
     color: "rgba(0, 0, 0, 0.87)",
     boxShadow: theme.shadows[1],
     fontSize: 20,
-    fontFamily: "JetBrains Mono"
+    fontFamily: "JetBrains Mono",
   },
 }));
 
 const links = [
   { name: "Home", link: "#home" },
   { name: "About Us", link: "#about" },
-  { name: "Events", link: "#events" },
+  { name: "Events", link: "" },
   { name: "Sponsors", link: "#sponsors" },
   { name: "SnT @IITI", link: "" },
   { name: "Tech Exhibits", link: "" },
@@ -56,7 +56,7 @@ function Navbar() {
               >
                 <ion-icon
                   name={open ? "close" : "menu-outline"}
-                  style={{ color: "white", fontSize:"100px"}}
+                  style={{ color: "white", fontSize: "100px" }}
                 ></ion-icon>
               </div>
             </span>
@@ -64,7 +64,7 @@ function Navbar() {
 
           <motion.ul
             className={`md:flex md:bg-transparent lg:bg-transparent sm:bg-[#111b53]  xsm:bg-[#111b53]  xxsm:bg-[#111b53] md:items-center md:pb-0 pb-12 absolute md:static z-[999] colo md:z-50 z-50 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${
-              open ? "top-[150px]" : "top-[-600px]"
+              open ? "top-[150px]" : "top-[-700px]"
             } z-5`}
           >
             {links.map((link) => (
@@ -78,13 +78,12 @@ function Navbar() {
                       onMouseLeave={() => hover2Handler()}
                     >
                       <Link
-                        className="text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed "
+                        className="lg:text-base md:text-base xxsm:text-4xl text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed "
                         href={"/" + link.link}
                         smooth={true}
                         duration={1000}
                         style={{
                           fontFamily: ["JetBrains Mono", "monospace"],
-                          fontSize: "15px",
                           lineHeight: "1.5",
                         }}
                       >
@@ -95,7 +94,7 @@ function Navbar() {
                         <motion.div
                           className={`w-[400px] bg-blue-800 z-[999] absolute ${
                             dropdown !== "Events" && "hidden"
-                          }`}
+                          } z-auto bg-red-800`}
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
@@ -106,10 +105,9 @@ function Navbar() {
                           }}
                         >
                           <motion.ul
-                            className="text-white w-100 p-4"
+                            className="text-white w-100 p-4 z-auto bg-red-800"
                             style={{
                               fontFamily: ["JetBrains Mono", "monospace"],
-                              fontSize: "10px",
                               lineHeight: "1.5",
                             }}
                             initial={{ opacity: 0 }}
@@ -122,13 +120,19 @@ function Navbar() {
                             }}
                           >
                             <Link href={"/competitions"}>
-                              <li className="w-100 mb-4 mt-2">Competitions</li>
+                              <li className="w-100 mb-4 mt-2 z-auto bg-red-800">
+                                Competitions
+                              </li>
                             </Link>
                             <Link href={"/workshops"}>
-                              <li className="w-100 mb-4">Workshops</li>
+                              <li className="w-100 mb-4 z-auto bg-red-800">
+                                Workshops
+                              </li>
                             </Link>
                             <Link href={"/talks"}>
-                              <li className="w-100 mb-4">Talks</li>
+                              <li className="w-100 mb-4 z-auto bg-red-800">
+                                Talks
+                              </li>
                             </Link>
                           </motion.ul>
                         </motion.div>
@@ -144,13 +148,12 @@ function Navbar() {
                     onMouseLeave={() => hover2Handler()}
                   >
                     <Link
-                      className="text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed "
+                      className="lg:text-base md:text-base xxsm:text-4xl text-[#CAC0B3] hover:text-gray-400 duration-500 font-robotoCondensed "
                       href={"/" + link.link}
                       smooth={true}
                       duration={1000}
                       style={{
                         fontFamily: ["JetBrains Mono", "monospace"],
-                        fontSize: "15px",
                         lineHeight: "1.5",
                       }}
                     >
@@ -159,7 +162,7 @@ function Navbar() {
                     </Link>
                     {link.name === "Events" && (
                       <motion.div
-                        className={`border-2 rounded-lg border-white w-[400px] bg-black-800 z-[999] absolute ${
+                        className={`border-2 rounded-lg border-white w-[400px] bg-gray-800 z-[999] absolute ${
                           dropdown !== "Events" && "hidden"
                         }`}
                         initial={{ opacity: 0 }}
@@ -175,7 +178,6 @@ function Navbar() {
                           className="text-white w-100 p-4"
                           style={{
                             fontFamily: ["JetBrains Mono", "monospace"],
-                            fontSize: "15px",
                             lineHeight: "1.5",
                           }}
                           initial={{ opacity: 0 }}
