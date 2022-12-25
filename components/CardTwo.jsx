@@ -8,11 +8,11 @@ import Image from "next/image";
 
 const style = {
   position: "absolute",
-  top: "50%",
+  top: "30%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "70%",
-  height: "70%",
+  height: "auto",
   bgcolor: "background.paper",
   boxShadow: 24,
   borderRadius: "25px",
@@ -89,39 +89,49 @@ function CardTwo(props) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <h1
-            style={{
-              fontFamily: "valorax Regular",
-              fontWeight: "normal",
-              fontSize: "40px",
-            }}
-            className="text-center"
-          >
-            {props.details.name}
-          </h1>
-          <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 h-[90%] p-4 overflow-scroll">
-            <div>
-              <Image
-                className="object-fill rounded-md h-[500px] w-[600px] relative"
-                src={props.details.src}
-                width={600}
-                height={500}
-              />
-            </div>
-
-            <div
-              className="p-6"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1}}
+          exit={{ opacity: 0 }}
+          transform={{
+            duration: 2,
+            delay: 1
+          }}
+        >
+          <Box sx={style}>
+            <h1
               style={{
-                fontFamily: ["JetBrains Mono", "monospace"],
-                fontSize: "22px",
-                lineHeight: "1.5",
+                fontFamily: "valorax Regular",
+                fontWeight: "normal",
+                fontSize: "40px",
               }}
+              className="text-center"
             >
-              {props.details.content}
+              {props.details.name}
+            </h1>
+            <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 h-[90%] p-4 overflow-scroll">
+              <div>
+                <Image
+                  className="object-fill rounded-md h-[100%] w-[600px] relative"
+                  src={props.details.src}
+                  width={600}
+                  height={500}
+                />
+              </div>
+
+              <div
+                className="p-6"
+                style={{
+                  fontFamily: ["JetBrains Mono", "monospace"],
+                  fontSize: "22px",
+                  lineHeight: "1.5",
+                }}
+              >
+                {props.details.content}
+              </div>
             </div>
-          </div>
-        </Box>
+          </Box>
+        </motion.div>
       </Modal>
     </motion.div>
   );

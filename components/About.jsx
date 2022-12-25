@@ -8,7 +8,6 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import ThreeCanvas from "./ThreeCanvas";
 
-
 const style = {
   position: "absolute",
   top: "50%",
@@ -102,10 +101,10 @@ function About() {
       id="about"
       className="h-auto md:w-screen sm:w-full xsm:w-full xxsm:w-full x-50"
     >
-      <motion.div className="z-50 h-auto md:m-6 pr-10 pt-[100px]">
-        <div className="grid md:grid-cols-1 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto mb-[50px]">
+      <motion.div className="z-50 h-auto md:m-6">
+        <div className="grid md:grid-cols-1 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto md:h-auto">
           <motion.h1
-            className="z-50 text-white text-9xl mb-10 ml-10 text-center subheadings uppercase"
+            className="z-50 text-white text-9xl text-center subheadings uppercase m-0"
             // animate={animation}
             style={{
               fontFamily: "valorax Regular",
@@ -115,6 +114,7 @@ function About() {
             About
           </motion.h1>
         </div>
+        <hr className="z-50"></hr>
         <div
           className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto"
           // variants={container}
@@ -128,35 +128,37 @@ function About() {
           >
             <ThreeCanvas className="opacity-0.4"></ThreeCanvas>
             <img
-              className="z-50 w-[100%] h-[100%]"
+              className="z-50 w-[80%] h-[60%] absolute my-auto mx-auto"
               src="/wordcropped.png"
               alt="An SVG of an eye"
             />
           </div>
-          <motion.h1
-            className="z-50 text-[#ffffff] md:text-9xl mb-10 ml-10"
-            // animate={animation2}
-            style={{
-              // fontFamily: "valorax Regular",
-              // fontWeight: "normal",
-              fontFamily: ["JetBrains Mono", "monospace"],
-              fontSize: "20px",
-              lineHeight: "1.5",
-            }}
-          >
-            <div ref={ref}></div>
-            Ingenium is the first edition of a tech fest in Fluxus, IIT Indore.{" "}
-            <br />
-            <br />
-            {`Our vision is to level-up the idea of what a "tech fest" means!`}{" "}
-            <br />
-            <br />
-            We have various online and offline competitions with thousands of
-            students and enthusiasts taking part. Workshops, Technical
-            exhibitions, Tech Talks, Start up Expo, Research and Industry
-            Conclave, Online hackathons, Real life hardware problems, and a lot
-            more we plan to Achieve in the future
-          </motion.h1>
+          <div className="flex items-center justify-center">
+            <motion.h1
+              className="z-50 text-[#ffffff] md:text-9xl mb-10 ml-10"
+              // animate={animation2}
+              style={{
+                // fontFamily: "valorax Regular",
+                // fontWeight: "normal",
+                fontFamily: ["JetBrains Mono", "monospace"],
+                fontSize: "20px",
+                lineHeight: "1.5",
+              }}
+            >
+              <div ref={ref}></div>
+              Ingenium is the first edition of a tech fest in Fluxus, IIT
+              Indore. <br />
+              <br />
+              {`Our vision is to level-up the idea of what a "tech fest" means!`}{" "}
+              <br />
+              <br />
+              We have various online and offline competitions with thousands of
+              students and enthusiasts taking part. Workshops, Technical
+              exhibitions, Tech Talks, Start up Expo, Research and Industry
+              Conclave, Online hackathons, Real life hardware problems, and a
+              lot more we plan to Achieve in the future
+            </motion.h1>
+          </div>
         </div>
 
         {/* <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-8"></div> */}

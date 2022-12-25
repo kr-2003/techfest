@@ -237,7 +237,7 @@ function Events() {
             </div>
           </motion.div>
         </div>
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 grid-flow-row gap-8 md:px-[230px] mt-4">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 grid-flow-row gap-8 mt-4">
           <motion.div
             className="flux bg-[#111b53] w-100 h-auto sm:shadow-2xl text-white rounded-lg border-[3px] p-0 mb-0"
             whileHover={{ y: "-10px" }}

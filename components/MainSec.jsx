@@ -102,7 +102,7 @@ function MainSec() {
         <div className="absolute z-50">
           <motion.div animate={animation}>
             <h1
-              className="main-logo textfont-bold z-50 text-white md:pt-60"
+              className="main-logo textfont-bold z-50 text-white"
               style={{
                 fontFamily: "valorax Regular",
                 fontWeight: "normal",
@@ -110,16 +110,7 @@ function MainSec() {
             >
               INGENIUM
             </h1>
-            <h1
-              className="sec-logo text-9xl font-bold z-50 text-white text-center"
-              style={{
-                fontFamily: "valorax Regular",
-                fontWeight: "normal",
-              }}
-            >
-              2022-23
-            </h1>
-            <motion.div className="h-[50%] p-10 mt-10">
+            <motion.div className="h-[50%] p-4">
               <motion.h1
                 className="tagline text-white flex items-center justify-center text-center flux3 h-full"
                 animate={animation}
@@ -143,9 +134,6 @@ function MainSec() {
             ornare metus ac odio efficitur, egestas viverra velit venenatis. Sed
             non ips
           </motion.p> */}
-          <div className="mt-8">
-            <Button value="Register" ml="0"></Button>
-          </div>
         </div>
       </div>
       {/* <div className="w-100 h-200">

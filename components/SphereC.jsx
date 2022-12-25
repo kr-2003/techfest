@@ -4,7 +4,7 @@ import { Sphere as Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 function SphereC() {
   return (
-    <Sphere visible args={[1, 100, 200]} scale={2.6}>
+    <Sphere visible args={[1, 100, 200]} scale={2}>
       <MeshDistortMaterial
         color="#0352ED"
         attach="material"

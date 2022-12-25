@@ -15,6 +15,13 @@ body {
   background-color: black;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient
+    (to right, rgba(0, 0, 0, 0), cornflowerblue, rgba(0, 0, 0, 0));
+}
+
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
@@ -42,13 +49,11 @@ body {
 
 .subheadings {
   font-size: 100px;
-  margin-bottom: 100px;
-  margin-top: 50px;
 }
 
 .tagline {
   font-family: "Vampire";
-  font-size: 100px !important;
+  font-size: 70px !important;
 }
 .sec-logo {
   font-size: 60px;
@@ -72,14 +77,14 @@ body {
   border-color: #426dfb;
   font-size: 9vw;
   line-height: 9vw;
-  box-shadow: 0 0 1.5vw #2356ff;
+  box-shadow: 0 0 1.5vw #ffffff;
 }
 
 .flux3 {
-  color: #121213;
+  color: #b3d2fa;
   font-size: 9vw;
   line-height: 9vw;
-  text-shadow: 0 0vw 10.5vw #ffffff;
+  text-shadow: 0 0vw 10.5vw #4c61ff;
 }
 .flux2 {
   color: #426dfb;
@@ -716,18 +721,18 @@ img {
 
 /* Competitions */
 @media (min-width: 1024px) {
-  .h-96-imp{
+  .h-96-imp {
     height: 16rem !important;
     background-image: url("../public/DBZposter.jpeg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
 @media (max-width: 800px) {
-  .h-96-imp{
+  .h-96-imp {
     height: 13rem !important;
     background-image: url("../public/DBZposter.jpeg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
