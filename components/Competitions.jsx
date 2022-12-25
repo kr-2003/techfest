@@ -84,7 +84,7 @@ function Competitions() {
       >
         <motion.h1
           className="text-5xl text-center mb-10 text-white md:font-[100px] sm:font-md"
-          animate={animation3}
+          // animate={animation3}
           style={{
             fontFamily: "valorax Regular",
             fontWeight: "normal",
@@ -94,7 +94,7 @@ function Competitions() {
           COMPETITIONS
         </motion.h1>
         <div className="flex flex-row justify-center items-center">
-          <motion.div className="w-full h-72 relative m-8 z-50" animate={animation3}>
+          <motion.div className="w-full h-72 relative m-8 z-50">
             <Caroosel />
           </motion.div>
         </div>
