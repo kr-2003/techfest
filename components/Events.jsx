@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Carousel from "./Carousel";
 import Box from "@mui/material/Box";
 import Button from "./Button";
 import Typography from "@mui/material/Typography";
@@ -143,7 +142,7 @@ function Events() {
             >
               competitions
             </h1>
-            <p
+            <div
               style={{
                 fontFamily: ["JetBrains Mono", "monospace"],
                 fontSize: "20px",
@@ -154,7 +153,7 @@ function Events() {
               BUCKLE UP YOUR SEAT BELTS AND GET READY TO TAKE PART IN VARIOUS
               COMPETITIONS IN INGENIUM ORGANIZED FOR EVERY DOMAIN. REGISTER
               QUICKLY.
-            </p>
+            </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
               onClick={competitionsHandler}
@@ -180,7 +179,7 @@ function Events() {
             >
               tech talks
             </h1>
-            <p
+            <div
               style={{
                 fontFamily: ["JetBrains Mono", "monospace"],
                 fontSize: "20px",
@@ -191,7 +190,7 @@ function Events() {
               GET TO KNOW ABOUT SOME NEW TECHNOLOGIES, NETWORK WITH SOME PEOPLE
               OF OTHER COLLEGES AND VARIOUS WORKING PROFESSIONALS THROUGH
               VARIOUS TECH TALKS, REGISTER NOW.{" "}
-            </p>
+            </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
               onClick={competitionsHandler}
@@ -217,7 +216,7 @@ function Events() {
             >
               workshops
             </h1>
-            <p
+            <div
               style={{
                 fontFamily: ["JetBrains Mono", "monospace"],
                 fontSize: "20px",
@@ -228,7 +227,7 @@ function Events() {
               POLISH YOUR TECH SKILLS, LEARN NEW THINGS, FIND NEW PERSONS. TIME
               TO INCRESE YOUR CURIOSITY. REGGISTER FOR VARIOUS WORKSHOPS IN
               INGENIUM.
-            </p>
+            </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
               onClick={competitionsHandler}
@@ -254,7 +253,7 @@ function Events() {
             >
               workshops
             </h1>
-            <p
+            <div
               style={{
                 fontFamily: ["JetBrains Mono", "monospace"],
                 fontSize: "20px",
@@ -265,7 +264,7 @@ function Events() {
               POLISH YOUR TECH SKILLS, LEARN NEW THINGS, FIND NEW PERSONS. TIME
               TO INCRESE YOUR CURIOSITY. REGGISTER FOR VARIOUS WORKSHOPS IN
               INGENIUM.
-            </p>
+            </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
               onClick={competitionsHandler}

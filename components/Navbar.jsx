@@ -56,7 +56,7 @@ function Navbar() {
               >
                 <ion-icon
                   name={open ? "close" : "menu-outline"}
-                  style={{ color: "white" }}
+                  style={{ color: "white", fontSize:"100px"}}
                 ></ion-icon>
               </div>
             </span>
