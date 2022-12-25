@@ -4,6 +4,9 @@ import Script from "next/script";
 import Head from "next/head";
 import SEO from "@bradgarropy/next-seo";
 import localFont from "@next/font/local";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 const myFont = localFont({ src: "../public/Valorax-lg25V.woff2" });
 
