@@ -8,6 +8,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
+
 function Caroosel() {
   return (
     <div className="flex flex-row">
