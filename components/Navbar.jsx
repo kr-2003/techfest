@@ -46,7 +46,7 @@ function Navbar() {
   return (
     <>
       <Progress></Progress>
-      <div className="sticky fixed w-full top-0 colo opacity-100 z-50">
+      <div className="w-full top-0 opacity-100 z-50">
         <div className="flex items-center justify-between colo py-4 md:px-10 px-7">
           <div className="font-bold text-xl cursor-pointer flex items-center text-gray-800">
             <span className="text-xl text-cyan-900 mr-1">

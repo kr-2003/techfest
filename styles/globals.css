@@ -723,7 +723,7 @@ img {
 @media (min-width: 1024px) {
   .h-96-imp {
     height: 16rem !important;
-    background-image: url("../public/DBZposter.jpeg");
+    background-image: url("/DBZposter.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -731,7 +731,7 @@ img {
 @media (max-width: 800px) {
   .h-96-imp {
     height: 13rem !important;
-    background-image: url("../public/DBZposter.jpeg");
+    background-image: url("/DBZposter.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   }
