@@ -76,16 +76,16 @@ body {
 }
 
 .flux3 {
-  color: #abbcf3;
+  color: #121213;
   font-size: 9vw;
   line-height: 9vw;
-  text-shadow: 0 0vw 1.5vw #2356ff;
+  text-shadow: 0 0vw 10.5vw #ffffff;
 }
 .flux2 {
   color: #426dfb;
   font-size: 9vw;
   line-height: 9vw;
-  box-shadow: 0 0 1.5vw #2356ff;
+  box-shadow: 0 0 1.5vw #f4f4f5;
 }
 
 .neon {

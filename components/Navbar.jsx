@@ -25,7 +25,7 @@ const links = [
   { name: "Events", link: "#events" },
   { name: "Sponsors", link: "#sponsors" },
   { name: "SnT @IITI", link: "" },
-  { name: "Tech Exihibits", link: "" },
+  { name: "Tech Exhibits", link: "" },
 ];
 
 function Navbar() {
@@ -64,12 +64,12 @@ function Navbar() {
 
           <motion.ul
             className={`md:flex md:bg-transparent lg:bg-transparent sm:bg-[#111b53]  xsm:bg-[#111b53]  xxsm:bg-[#111b53] md:items-center md:pb-0 pb-12 absolute md:static z-[999] colo md:z-50 z-50 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-200 ease-in ${
-              open ? "top-[100px]" : "top-[-500px]"
+              open ? "top-[150px]" : "top-[-600px]"
             } z-5`}
           >
             {links.map((link) => (
               <>
-                {link.name === "Tech Exihibits" && (
+                {link.name === "Tech Exhibits" && (
                   <LightTooltip title="Coming Soon!">
                     <li
                       className="md:ml-8 text-md md:my-0 my-7 hover:cursor-pointer"
@@ -136,7 +136,7 @@ function Navbar() {
                     </li>
                   </LightTooltip>
                 )}
-                {link.name !== "Tech Exihibits" && (
+                {link.name !== "Tech Exhibits" && (
                   <li
                     className="md:ml-8 text-xl md:my-0 my-7 hover:cursor-pointer"
                     key={link.name}
