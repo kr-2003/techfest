@@ -60,12 +60,13 @@ function Sponsors() {
   return (
     <motion.Reactdiv
       id="sponsors"
-      className="z-0 flex items-center justify-center md:h-[1000px] mb-4 lg:mb-0 sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
+      className="z-0 flex items-center justify-center w-screen"
+      // className="z-0 flex items-center justify-center md:h-[900px] sm:h-[1500px] h-[1500px] w-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex flex-col h-screen w-screen w-full mt-0 md:px-4 mt-0">
+      <div className="flex flex-col w-screen w-full pb-10 mt-0 top-0 md:px-4 mt-0">
         <div className="flex w-full z-50">
           <h1
             style={{
@@ -140,9 +141,11 @@ function Sponsors() {
               <div className="sponsor_text">
                 <h1 className="uppercase text-center text-[#111b53]">
 
+
                   title sponsor <br></br> apple
 
                  
+
 
                 </h1>
               </div>
