@@ -7,7 +7,7 @@ import { PolyhedronGeometry } from "three";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
-
+import Image from "next/image";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -29,17 +29,12 @@ function Footer() {
       }}
     >
       <div className="flux w-full bg-[#111b53] z-50 pb-10 md:col-span-1 xsm:col-span-2">
-        <div className="text-[#111111] text-4xl w-[150px] leading-[150px] text-center mx-auto mt-[50px]">
-          <h1
-            style={{
-              fontFamily: "valorax Regular",
-              fontWeight: "normal",
-              fontSize: "30px",
-              color: "white"
-            }}
-          >
-            INGENIUM
-          </h1>
+        <div className="rounded-full w-[150px] h-[150px] flex items-center justify-center mx-auto mt-[50px] overflow-hidden">
+          <img
+            className="relative z-50 w-[100%] h-[100%] absolute my-auto mx-auto"
+            src="/fluxus.jpeg"
+            alt="An SVG of an eye"
+          />
         </div>
 
         <div className="h-[30px] mt-[30px] ">
@@ -62,9 +57,11 @@ function Footer() {
         </div>
       </div>
       <div className="bg-[#111b53] w-full z-50 pb-10">
-        <h1 className="text-5xl md:text-3xl ml-[45px] mt-[40px] font-bold ">MORE</h1>
+        <h1 className="text-5xl md:text-3xl ml-[45px] mt-[40px] font-bold ">
+          MORE
+        </h1>
         <a
-          href="https://www.google.com"
+          href="#"
           className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold w-full"
         >
           {/* <FontAwesomeIcon
@@ -74,25 +71,34 @@ function Footer() {
           Home
         </a>
 
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a
+          href="https://www.iiti.ac.in/"
+          className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+        >
           {/* <FontAwesomeIcon icon={faFacebook} className="text-3xl">
             {" "}
           </FontAwesomeIcon> */}
-          About Us
+          IIT Indore
         </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a
+          href="https://fluxus.co.in/"
+          className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+        >
           {/* <FontAwesomeIcon
             icon={faInstagram}
             className="text-3xl"
           ></FontAwesomeIcon> */}
-          Events
+          Fluxus
         </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a
+          href="https://ca.fluxus.co.in/"
+          className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+        >
           {/* <FontAwesomeIcon
             icon={faLinkedin}
             className="text-3xl"
           ></FontAwesomeIcon> */}
-          Sponsors
+          Fluxus CA Portal
         </a>
         <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
           {/* <FontAwesomeIcon
@@ -111,6 +117,45 @@ function Footer() {
       </div>
       <div className="bg-[#111b53] w-full z-50 pb-10">
         <h1 className="text-3xl ml-[45px] mt-[40px] font-bold">FOLLOW</h1>
+
+        <a
+          href="https://www.instagram.com/fluxus_iit_indore/?hl=en"
+          className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+        >
+          <FontAwesomeIcon
+            icon={faInstagram}
+            className="text-2xl mr-[10px] align-middle rounded-full p-[5px]  hover:bg-gradient-to-tr hover:from-[#fdf497] hover:via-[#fd5949] hover:via-[#d6249f] hover:to-[#285AEB] hover:text-white"
+          ></FontAwesomeIcon>
+          Instagram
+        </a>
+        <a
+          href="https://www.linkedin.com/company/fluxus---iit-indore/"
+          className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="text-2xl mr-[10px] align-middle rounded-full p-[6px]  hover:bg-[#007bb5] hover:text-white"
+          ></FontAwesomeIcon>
+          LinkedIn
+        </a>
+
+        <a
+          href="https://www.facebook.com/fluxusiiti/"
+          className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+        >
+          <FontAwesomeIcon
+            icon={faFacebook}
+            className="text-2xl mr-[10px] align-middle rounded-full p-[4px] hover:bg-white hover:text-[#3B5998] "
+          ></FontAwesomeIcon>
+          Facebook
+        </a>
+        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+          <FontAwesomeIcon
+            icon={faDiscord}
+            className="text-2xl mr-[10px] align-middle rounded-full p-[5px] hover:bg-[#7289d9] hover:text-white "
+          ></FontAwesomeIcon>
+          Discord
+        </a>
         <a
           href="https://www.google.com"
           className="text-2xl md:text-lg  hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
@@ -120,36 +165,6 @@ function Footer() {
             className="text-2xl mr-[10px] rounded-full p-[5px]  hover:bg-[#55ACEE] hover:text-white"
           ></FontAwesomeIcon>
           Twitter
-        </a>
-
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className="text-2xl mr-[10px] align-middle rounded-full p-[5px]  hover:bg-gradient-to-tr hover:from-[#fdf497] hover:via-[#fd5949] hover:via-[#d6249f] hover:to-[#285AEB] hover:text-white"
-          >
-          </FontAwesomeIcon>
-          Instagram
-        </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="text-2xl mr-[10px] align-middle rounded-full p-[6px]  hover:bg-[#007bb5] hover:text-white"
-          ></FontAwesomeIcon>
-          LinkedIn
-        </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          <FontAwesomeIcon
-            icon={faDiscord}
-            className="text-2xl mr-[10px] align-middle rounded-full p-[5px] hover:bg-[#7289d9] hover:text-white "
-          ></FontAwesomeIcon>
-          Discord
-        </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className="text-2xl mr-[10px] align-middle rounded-full p-[4px] hover:bg-white hover:text-[#3B5998] "
-          ></FontAwesomeIcon>
-          Facebook
         </a>
       </div>
       <div className="bg-[#111b53] w-full z-50 h-auto pb-10 font-bold">
