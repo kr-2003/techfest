@@ -98,7 +98,7 @@ function MainSec() {
       id="home"
       ref={ref}
     >
-      <div className="text-[#FF595A] flex items-center justify-center ml-8 z-0">
+      <div className="text-[#FF595A] flex pt-[35vh] md:pt-0 md:items-center justify-center ml-8 z-0">
         <div className="absolute z-50">
           <motion.div animate={animation}>
             <h1
