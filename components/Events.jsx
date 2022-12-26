@@ -109,7 +109,7 @@ function Events() {
         // animate={{ opacity: 1 }}
         // transition={{ duration: 0.4 }}
       ></motion.div>
-      <motion.div className="w-full h-auto mr-0 mt-10 pt-10 sm:h-auto xsm:h-auto p-10">
+      <motion.div className="w-full h-auto mr-0 my-10 pt-10 sm:h-auto xsm:h-auto p-10">
         <motion.h1
           className="text-white text-9xl text-center mb-10 subheadings"
           animate={animation}
