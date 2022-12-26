@@ -99,7 +99,7 @@ function Footer() {
             icon={faDiscord}
             className="text-3xl"
           ></FontAwesomeIcon> */}
-          Fluxus Tech Exihibits
+          Fluxus Tech Exhibits
         </a>
         <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
           {/* <FontAwesomeIcon
