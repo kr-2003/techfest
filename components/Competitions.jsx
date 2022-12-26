@@ -94,7 +94,7 @@ function Competitions() {
           COMPETITIONS
         </motion.h1>
         <div className="flex flex-row justify-center items-center">
-          <motion.div className="w-full h-72 relative m-8 z-50">
+          <motion.div className="w-full h-screen relative m-8 z-50">
             <Caroosel />
           </motion.div>
         </div>
