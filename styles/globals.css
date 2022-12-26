@@ -728,7 +728,7 @@ img {
     background-repeat: no-repeat;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .h-96-imp {
     height: 13rem !important;
     background-image: url("/DBZposter.jpeg");
