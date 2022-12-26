@@ -60,7 +60,7 @@ function Sponsors() {
   return (
     <motion.Reactdiv
       id="sponsors"
-      className="z-0 flex items-center justify-center w-screen mb-[200px]"
+      className="z-0 flex items-center justify-center w-screen mb-[200px] my-10"
       // className="z-0 flex items-center justify-center md:h-[900px] sm:h-[1500px] h-[1500px] w-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -78,7 +78,7 @@ function Sponsors() {
             sponsors
           </h1>
         </div>
-        <div>
+        {/* <div>
           <h2
             className="text-white text-center mb-10 mt-10"
             style={{
@@ -139,9 +139,9 @@ function Sponsors() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div>
-          <h2
+          {/* <h2
             className="text-white text-center mb-10 mt-20"
             style={{
               fontFamily: ["JetBrains Mono", "monospace"],
@@ -150,8 +150,8 @@ function Sponsors() {
             }}
           >
             SILVER SPONSORS
-          </h2>
-          <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 xxsm:grid-cols-1 mx-auto lg:w-[100%] gap-8 sm:w-[70%]">
+          </h2> */}
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 xxsm:grid-cols-1 mx-auto lg:w-[100%] gap-8 sm:w-[70%] md:px-[10vw] md:mt-[2vh]">
             <div className="mx-auto">
               <div className="super-box w-80 h-80 z-[0] bg-[#111b53] rounded-full">
                 <div className="flex flex-col justify-center items-center relative w-full h-full">
