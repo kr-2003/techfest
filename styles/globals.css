@@ -213,9 +213,9 @@ hr {
 .five:before {
   -webkit-transition: all 1s;
   transition: all 1s;
-  font-size: 30px;
-  left: 25px;
-  top: 19px;
+  font-size: 25px;
+  left: 0px;
+  top: 30px;
 }
 .one:after,
 .two:after,

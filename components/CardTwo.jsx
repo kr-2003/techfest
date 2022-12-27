@@ -26,26 +26,26 @@ function CardTwo(props) {
   const handleClose = () => setOpen(false);
   return (
     <motion.div
-      className="flux flex items-center h-[500px] justify-center relative overflow-hidden rounded-lg shadow-lg cursor-pointer x-100 md:w-[30vw] sm:w-[45vw] xsm:w-[90vw]"
+      className="flux flex items-center h-[300px] justify-center relative overflow-hidden rounded-lg shadow-lg cursor-pointer x-100 md:w-[12vw] sm:w-[45vw] xsm:w-[90vw]"
       whileHover={{ y: -4, boxShadow: "0px 0px 15px 0px #FFFFFF" }}
       initial={{ opacity: 0, y: "100px", rotate: -4 }}
       animate={{ opacity: 1, y: "0px", rotate: 0 }}
       transition={{ duration: 0.5 }}
     >
       <img
-        className="object-fill w-100 h-[500px] pb-[170px]"
+        className="object-fill w-100 h-[300px] pb-[120px]"
         // src="https://wallpaper.dog/large/10702676.jpg"
         src={props.details.src}
         // style={{ width: "100%", height: "400px" }}
         alt="Flower and sky"
       />
       {/* <div className="bg-red w-full h-49">hello</div> */}
-      <div className="absolute bottom-0 left-0 px-6 py-4 bg-slate-500/50 w-[100%] block">
+      <div className="absolute bottom-0 left-0 px-1 py-4 bg-slate-500/50 w-[100%] block">
         <h4
-          className="mb-3 text-xl font-semibold tracking-tight text-white w-100 block uppercase"
+          className="mb-3 text-sm font-semibold tracking-tight text-white w-100 block uppercase"
           style={{
             fontFamily: ["JetBrains Mono", "monospace"],
-            fontSize: "25px",
+            fontSize: "13px",
             lineHeight: "1.5",
           }}
         >
@@ -55,14 +55,19 @@ function CardTwo(props) {
           Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen
           tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.
         </p> */}
-        <div className="grid grid-cols-2 md:gap-8 sm:gap-2 xsm:gap-2 xxsm:gap-2">
+        <div className="grid grid-cols-2 md:gap-2 sm:gap-2 xsm:gap-2 xxsm:gap-2">
           <button
             onClick={() => setOpen(true)}
             className="four text-black w-100"
             style={{
               fontFamily: ["JetBrains Mono", "monospace"],
-              fontSize: "20px",
-              lineHeight: "1.5",
+              fontSize: "15px",
+              lineHeight: "1",
+              display:"flex",
+              paddingVertical:0,
+              marginBottom:0,
+              justifyContent: "center",
+              alignItems: "center",
               clipPath:
                 "polygon(12px 0px, 100% 0px, 100% 72%, calc(100% - 12px) 100%, 0px 100%, 0px 12px)",
             }}
@@ -73,8 +78,13 @@ function CardTwo(props) {
             className="one text-black w-100"
             style={{
               fontFamily: ["JetBrains Mono", "monospace"],
-              fontSize: "20px",
-              lineHeight: "1.5",
+              fontSize: "15px",
+              lineHeight: "1",
+              display:"flex",
+              paddingVertical:0,
+              marginBottom:0,
+              justifyContent: "center",
+              alignItems: "center",
               clipPath:
                 "polygon(12px 0px, 100% 0px, 100% 72%, calc(100% - 12px) 100%, 0px 100%, 0px 12px)",
             }}
