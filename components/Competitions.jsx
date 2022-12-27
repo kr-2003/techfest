@@ -4,10 +4,11 @@ import { useInView } from "react-intersection-observer";
 import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
 import CardThree from "./CardThree";
-import comp_photo from "../public/DBZposter.jpeg"
-import data from "./data/data.json"
+import comp_photo from "../public/DBZposter.jpeg";
+import data from "./data/data.json";
 import Caroosel from "./Caroosel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from "./Carousel";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,7 +17,6 @@ function Competitions() {
   const animation = useAnimation();
   const animation2 = useAnimation();
   const animation3 = useAnimation();
-
 
   useEffect(() => {
     if (inView) {
@@ -70,7 +70,7 @@ function Competitions() {
   return (
     <motion.Reactdiv
       id="competitions"
-      className="flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen mt-[100px]"
+      className="flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -83,7 +83,7 @@ function Competitions() {
         ref={ref}
       >
         <motion.h1
-          className="text-5xl text-center mb-10 text-white md:font-[100px] sm:font-md"
+          className="text-5xl text-center text-white md:font-[100px] sm:font-md"
           // animate={animation3}
           style={{
             fontFamily: "valorax Regular",
@@ -93,12 +93,10 @@ function Competitions() {
         >
           COMPETITIONS
         </motion.h1>
-        <div className="flex flex-row justify-center items-center">
-          <motion.div className="w-full h-screen relative m-8 z-50">
-            <Caroosel />
-          </motion.div>
-        </div>
-        <div className="grid md:grid-cols-7 sm:grid-cols-2 msm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
+
+        <Carousel></Carousel>
+
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 msm:grid-cols-2 xsm:grid-cols-1 xxsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
           {data.resources.map((comp, key) => (
             <CardTwo details={comp} key={key}></CardTwo>
           ))}

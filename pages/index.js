@@ -9,6 +9,7 @@ import Particle from "../components/Particle";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Progress from "../components/Progress";
+import Carousel from "../components/Carousel";
 // import window from 'global'
 
 function home() {
@@ -68,6 +69,7 @@ function home() {
         {/* <BrowserView>
             <Particle></Particle>
           </BrowserView> */}
+       
         <Navbar></Navbar>
         <HomePage></HomePage>
         <About></About>
