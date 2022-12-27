@@ -736,3 +736,10 @@ img {
     background-repeat: no-repeat;
   }
 }
+
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}

@@ -101,7 +101,7 @@ function About() {
       id="about"
       className="h-auto md:w-screen sm:w-full xsm:w-full xxsm:w-full x-50"
     >
-      <motion.div className="z-50 h-auto md:m-6">
+      <motion.div className="z-50 h-auto">
         <div className="grid md:grid-cols-1 sm:grid-cols-1 xsm:grid-cols-1 sm:h-auto xsm:h-auto md:h-auto">
           <motion.h1
             className="z-50 text-white text-9xl text-center subheadings uppercase m-0"

@@ -44,15 +44,15 @@ function Sponsors() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        y: "-20vw",
+        y: "-20%",
       });
       animation2.start({
         opacity: 0,
-        y: "20vw",
+        y: "20%",
       });
       animation3.start({
         opacity: 0,
-        y: "-10vw",
+        y: "-10%",
         scale: 0.5,
       });
     }
@@ -73,7 +73,7 @@ function Sponsors() {
               fontFamily: "valorax Regular",
               fontWeight: "normal",
             }}
-            className="text-center subheadings w-screen lg:ml-10 text-center uppercase text-white font-valorax"
+            className="text-center subheadings w-screen text-center uppercase text-white font-valorax"
           >
             sponsors
           </h1>
@@ -151,7 +151,7 @@ function Sponsors() {
           >
             SILVER SPONSORS
           </h2> */}
-          <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 xxsm:grid-cols-1 mx-auto lg:w-[100%] gap-8 sm:w-[70%] md:px-[10vw] md:mt-[2vh]">
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 xxsm:grid-cols-1 mx-auto lg:w-[100%] gap-8 sm:w-[70%] md:px-[10%] md:mt-[2vh]">
             <div className="mx-auto">
               <div className="super-box w-80 h-80 z-[0] bg-[#111b53] rounded-full">
                 <div className="flex flex-col justify-center items-center relative w-full h-full">
