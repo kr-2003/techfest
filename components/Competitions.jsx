@@ -54,15 +54,15 @@ function Competitions() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        y: "-20vw",
+        y: "-20%",
       });
       animation2.start({
         opacity: 0,
-        y: "20vw",
+        y: "20%",
       });
       animation3.start({
         opacity: 0,
-        y: "-10vw",
+        y: "-10%",
         scale: 0.5,
       });
     }
@@ -98,7 +98,7 @@ function Competitions() {
             <Caroosel />
           </motion.div>
         </div>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 msm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
+        <div className="grid md:grid-cols-7 sm:grid-cols-2 msm:grid-cols-1 xsm:grid-cols-1 xxsm:grid-cols-1 flex items-center justify-center grid-flow-row gap-x-10 gap-y-10 h-100">
           {data.resources.map((comp, key) => (
             <CardTwo details={comp} key={key}></CardTwo>
           ))}

@@ -84,15 +84,15 @@ function Events() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        x: "0vw",
+        x: "0%",
       });
       animation2.start({
         opacity: 0,
-        x: "0vw",
+        x: "0%",
       });
       animation3.start({
         opacity: 0,
-        x: "0vw",
+        x: "0%",
         // scale: 0.5,
       });
     }

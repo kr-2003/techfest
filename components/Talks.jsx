@@ -85,15 +85,15 @@ function Talks() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        y: "-20vw",
+        y: "-20%",
       });
       animation2.start({
         opacity: 0,
-        y: "20vw",
+        y: "20%",
       });
       animation3.start({
         opacity: 0,
-        y: "-10vw",
+        y: "-10%",
         scale: 0.5,
       });
     }

@@ -78,15 +78,15 @@ function MainSec() {
     if (!inView) {
       animation.start({
         opacity: 1,
-        x: "0vw",
+        x: "0%",
       });
       animation2.start({
         opacity: 1,
-        x: "0vw",
+        x: "0%",
       });
       animation3.start({
         opacity: 1,
-        y: "0vw",
+        y: "0%",
         // scale: 0.5,
       });
     }
@@ -98,7 +98,7 @@ function MainSec() {
       id="home"
       ref={ref}
     >
-      <div className="text-[#FF595A] flex pt-[35vh] md:pt-0 md:items-center justify-center ml-8 z-0">
+      <div className="text-[#FF595A] flex pt-[35vh] md:pt-0 md:items-center justify-center z-0">
         <div className="absolute z-50">
           <motion.div animate={animation}>
             <h1
