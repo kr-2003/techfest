@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Progress from "../components/Progress";
 import Carousel from "../components/Carousel";
+import Snt from "../components/Snt";
 // import window from 'global'
 
 function home() {
@@ -76,6 +77,7 @@ function home() {
         <Events></Events>
         <Sponsors></Sponsors>
         <Footer></Footer>
+        <Snt />
       </motion.div>
     </div>
   );
