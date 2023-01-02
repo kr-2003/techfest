@@ -133,7 +133,7 @@ function CardTwo(props) {
                 className="p-6"
                 style={{
                   fontFamily: ["JetBrains Mono", "monospace"],
-                  fontSize: "22px",
+                  fontSize: "19px",
                   lineHeight: "1.5",
                 }}
               >
