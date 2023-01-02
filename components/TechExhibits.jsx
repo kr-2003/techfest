@@ -43,7 +43,7 @@ const competitionsDetails = [
   },
 ];
 
-function Talks() {
+function TechExhibits() {
   const { ref, inView } = useInView();
   const animation = useAnimation();
   const animation2 = useAnimation();
@@ -129,4 +129,4 @@ function Talks() {
   );
 }
 
-export default Talks;
+export default TechExhibits;

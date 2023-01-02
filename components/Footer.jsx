@@ -13,6 +13,20 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import { styled } from "@mui/material/styles";
+
+const LightTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+    color: "rgba(0, 0, 0, 0.87)",
+    boxShadow: theme.shadows[1],
+    fontSize: 20,
+    fontFamily: "JetBrains Mono",
+  },
+}));
 
 function Footer() {
   return (
@@ -43,7 +57,7 @@ function Footer() {
             icon={faPhone}
             className="text-3xl mr-[50px]"
           ></FontAwesomeIcon> */}
-            9898989898
+            9928664557
           </div>
         </div>
         <div className="h-[30px] mt-[20px]">
@@ -100,20 +114,15 @@ function Footer() {
           ></FontAwesomeIcon> */}
           Fluxus CA Portal
         </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          {/* <FontAwesomeIcon
+        <LightTooltip title="Coming Soon!">
+          <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+            {/* <FontAwesomeIcon
             icon={faDiscord}
             className="text-3xl"
           ></FontAwesomeIcon> */}
-          Fluxus Tech Exhibits
-        </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
-          {/* <FontAwesomeIcon
-            icon={faDiscord}
-            className="text-3xl"
-          ></FontAwesomeIcon> */}
-          SnT @IITI
-        </a>
+            Fluxus Tech Exhibits
+          </a>
+        </LightTooltip>
       </div>
       <div className="bg-[#111b53] w-full z-50 pb-10">
         <h1 className="text-3xl ml-[45px] mt-[40px] font-bold">FOLLOW</h1>
@@ -149,7 +158,10 @@ function Footer() {
           ></FontAwesomeIcon>
           Facebook
         </a>
-        <a className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold">
+        <a
+          href="https://discord.gg/3XdGKMe929"
+          className="text-2xl md:text-lg hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
+        >
           <FontAwesomeIcon
             icon={faDiscord}
             className="text-2xl mr-[10px] align-middle rounded-full p-[5px] hover:bg-[#7289d9] hover:text-white "
@@ -157,7 +169,7 @@ function Footer() {
           Discord
         </a>
         <a
-          href="https://www.google.com"
+          href="https://twitter.com/fluxusiiti_"
           className="text-2xl md:text-lg  hover:border-l-2 hover:border-[#466ef2] hover:text-[#466ef2] ml-[45px] mt-[10px] hover:rounded-sm p-[4px] block m-[4px] font-bold"
         >
           <FontAwesomeIcon
