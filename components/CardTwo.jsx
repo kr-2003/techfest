@@ -26,7 +26,7 @@ function CardTwo(props) {
   const handleClose = () => setOpen(false);
   return (
     <motion.div
-      className="flux flex items-center h-[300px] justify-center relative overflow-hidden rounded-lg shadow-lg cursor-pointer x-100 md:w-[20vw] msm:w-[35vw] xsm:w-[50vw]"
+      className="flux flex items-center h-[300px] justify-center relative overflow-hidden rounded-lg shadow-lg cursor-pointer x-100 md:w-[20vw] msm:w-[35vw] xsm:w-[75vw]"
       whileHover={{ y: -4, boxShadow: "0px 0px 15px 0px #FFFFFF" }}
       initial={{ opacity: 0, y: "100px", rotate: -4 }}
       animate={{ opacity: 1, y: "0px", rotate: 0 }}

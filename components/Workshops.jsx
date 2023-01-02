@@ -122,13 +122,8 @@ function Workshops() {
             fontSize: "80px",
           }}
         >
-          WORKSHOPS
+          COMING SOON!
         </motion.h1>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-x-5 gap-y-8 h-100">
-          {competitionsDetails.map((comp, key) => (
-            <CardTwo details={comp} key={key}></CardTwo>
-          ))}
-        </div>
       </motion.div>
     </motion.Reactdiv>
   );

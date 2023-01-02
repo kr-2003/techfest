@@ -6,6 +6,20 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useInView } from "react-intersection-observer";
 import Router, { useRouter } from "next/router";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import { styled } from "@mui/material/styles";
+
+const LightTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+    color: "rgba(0, 0, 0, 0.87)",
+    boxShadow: theme.shadows[1],
+    fontSize: 20,
+    fontFamily: "JetBrains Mono",
+  },
+}));
 
 const style = {
   position: "absolute",
@@ -46,6 +60,18 @@ function Events() {
   const animation3 = useAnimation();
   const competitionsHandler = () => {
     router.push("/competitions");
+  };
+  const talksHandler = () => {
+    router.push("/talks");
+  };
+  const workshopsHandler = () => {
+    router.push("/workshops");
+  };
+  const startupHandler = () => {
+    router.push("/startupexpo");
+  };
+  const techHandler = () => {
+    router.push("/startupexpo");
   };
   useEffect(() => {
     if (inView) {
@@ -194,7 +220,7 @@ function Events() {
             </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
-              onClick={competitionsHandler}
+              onClick={talksHandler}
             >
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>
@@ -231,7 +257,7 @@ function Events() {
             </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
-              onClick={competitionsHandler}
+              onClick={workshopsHandler}
             >
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>
@@ -270,7 +296,7 @@ function Events() {
             </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
-              onClick={competitionsHandler}
+              onClick={startupHandler}
             >
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>
@@ -307,7 +333,7 @@ function Events() {
             </div>
             <div
               className="mt-8 text-sm w-100 text-center mb-8"
-              onClick={competitionsHandler}
+              onClick={techHandler}
             >
               <Button value="KNOW MORE!" ml="0"></Button>
             </div>

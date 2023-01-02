@@ -133,7 +133,7 @@ function About() {
               alt="An SVG of an eye"
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center pr-[40px] mr-4">
             <motion.h1
               className="z-50 text-[#ffffff] md:text-9xl mb-10 ml-10"
               // animate={animation2}

@@ -22,9 +22,8 @@ const LightTooltip = styled(({ className, ...props }) => (
 const links = [
   { name: "Home", link: "#home" },
   { name: "About Us", link: "#about" },
-  { name: "Events", link: "" },
+  { name: "Events", link: "#events" },
   { name: "Sponsors", link: "#sponsors" },
-  { name: "SnT @IITI", link: "" },
   { name: "Tech Exhibits", link: "" },
 ];
 
