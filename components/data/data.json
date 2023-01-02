@@ -2,27 +2,27 @@
     "resources": [
         {
       "name": "Divide By Zero",
-      "src": "/DBZposter.jpeg",
+      "src": "/divideByZero.png",
       "content": "Pan-India level competitions and hackathons with international participation also and participation from all the top tech institutions in India. Last edition had over 20k participation cumulatively"
         },
         {
       "name": "Code Golf",
-      "src": "/images/euristica.svg",
+      "src": "/code golf.png",
       "content": "Pan-India level competitions and hackathons with international participation also and participation from all the top tech institutions in India. Last edition had over 20k participation cumulatively"
         },
         {
       "name": "Surprise Language",
-      "src": "/images/euristica.svg",
+      "src": "/sl.png",
       "content": "Pan-India level competitions and hackathons with international participation also and participation from all the top tech institutions in India. Last edition had over 20k participation cumulatively"
         },
         {
       "name": "Hackistica",
-      "src": "/images/euristica.svg",
+      "src": "/hackistica.png",
       "content": "Pan-India level competitions and hackathons with international participation also and participation from all the top tech institutions in India. Last edition had over 20k participation cumulatively"
         },
         {
       "name": "Byte Bandits CTF",
-      "src": "/images/euristica.svg",
+      "src": "/ctf.png",
       "content": "Pan-India level competitions and hackathons with international participation also and participation from all the top tech institutions in India. Last edition had over 20k participation cumulatively"
         },
         {
